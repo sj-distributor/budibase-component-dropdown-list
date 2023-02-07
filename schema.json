@@ -1,0 +1,14 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "dropdown-list",
+    "friendlyName": "Dropdown List",
+    "description": "A dropdown list Budibase component",
+    "icon": "Button",
+    "hasChildren": true,
+    "illegalChildren": ["section"],
+    "showSettingsBar": true,
+    "settings": []
+  }
+}
