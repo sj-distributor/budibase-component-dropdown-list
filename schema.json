@@ -2,7 +2,7 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "dropdown-list",
+    "name": "budibase-component-dropdown-list",
     "friendlyName": "Dropdown List",
     "description": "A dropdown list Budibase component",
     "icon": "Button",
