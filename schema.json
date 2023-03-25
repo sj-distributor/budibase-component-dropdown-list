@@ -7,8 +7,75 @@
     "description": "A dropdown list Budibase component",
     "icon": "Button",
     "hasChildren": true,
-    "illegalChildren": ["section"],
+    "illegalChildren": [
+      "section"
+    ],
     "showSettingsBar": true,
-    "settings": []
+    "settings": [
+      {
+        "type": "select",
+        "key": "variant",
+        "label": "Variant",
+        "defaultValue": "primary",
+        "options": [
+          {
+            "label": "Primary",
+            "value": "primary"
+          },
+          {
+            "label": "Secondary",
+            "value": "secondary"
+          },
+          {
+            "label": "Action",
+            "value": "cta"
+          },
+          {
+            "label": "Warning",
+            "value": "warning"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "key": "size",
+        "label": "Size",
+        "defaultValue": "M",
+        "options": [
+          {
+            "label": "Small",
+            "value": "S"
+          },
+          {
+            "label": "Medium",
+            "value": "M"
+          },
+          {
+            "label": "Large",
+            "value": "L"
+          },
+          {
+            "label": "Extra Large",
+            "value": "XL"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "key": "direction",
+        "label": "Direction",
+        "defaultValue": "row",
+        "options": [
+          {
+            "label": "Portrait",
+            "value": "row"
+          },
+          {
+            "label": "Landscape",
+            "value": "column"
+          }
+        ]
+      }
+    ]
   }
 }
