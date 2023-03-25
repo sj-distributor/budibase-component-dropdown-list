@@ -1,6 +1,6 @@
 {
   "name": "budibase-component-dropdown-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A dropdown list Budibase component",
   "license": "MIT",
   "svelte": "index.js",
