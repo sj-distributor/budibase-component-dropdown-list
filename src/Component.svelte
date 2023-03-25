@@ -32,14 +32,7 @@
 
     {#if active === true}
       <div class="dropdown-memnu-container" style:flex-direction={direction}>
-        {#if !!$$slots['slot']}
-          <div>
-            <h2>Custom content:</h2>
-            <slot name="slot" />
-          </div>
-        {:else}
-          <span>Item not found.</span>
-        {/if}
+        <slot />
       </div>
     {/if}
   </div>
