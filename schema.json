@@ -80,11 +80,11 @@
         "type": "select",
         "key": "position",
         "label": "Position",
-        "defaultValue": "buttom",
+        "defaultValue": "bottom",
         "options": [
           {
-            "label": "Buttom",
-            "value": "buttom"
+            "label": "Bottom",
+            "value": "bottom"
           },
           {
             "label": "Right",
