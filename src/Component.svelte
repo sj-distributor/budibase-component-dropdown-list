@@ -5,17 +5,19 @@
   export let variant;
   export let size;
   export let direction;
+  export let position;
 
   let active = false;
 
   const { styleable } = getContext("sdk");
   const component = getContext("component");
+
 </script>
 
 <div use:styleable={$component.styles}>
   <div use:clickOutside on:click_outside={() => (active = false)}>
     <button
-      on:click={() => (active = !active)}
+      on:click={() => active = !active}
       type="button"
       class="spectrum-Button 
       spectrum-Button--{variant ?? 'primary'} 
@@ -28,25 +30,32 @@
       >
         <use xlink:href="#spectrum-css-icon-Chevron100" />
       </svg>
+      
     </button>
 
-    {#if active === true}
-      <div class="dropdown-memnu-container" style:flex-direction={direction}>
+    {#if active}
+      <div class={position === 'right' ? 'position-right dropdown-memnu-container' : 'dropdown-memnu-container'} style:flex-direction={direction}>
         <slot />
       </div>
     {/if}
+
   </div>
 </div>
 
 <style>
+  .position-right {
+    top: 4px;
+    left: 92px;
+  }
+  
   .dropdown-memnu-container {
     display: flex;
     gap: 4px;
-    z-index: 9999;
+    z-index: 999;
     position: absolute;
     background-color: white;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 4px;
     border-style: solid;
     border-color: rgb(177, 177, 177);

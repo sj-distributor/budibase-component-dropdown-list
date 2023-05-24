@@ -75,6 +75,22 @@
             "value": "column"
           }
         ]
+      },
+      {
+        "type": "select",
+        "key": "position",
+        "label": "Position",
+        "defaultValue": "buttom",
+        "options": [
+          {
+            "label": "Buttom",
+            "value": "buttom"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       }
     ]
   }
